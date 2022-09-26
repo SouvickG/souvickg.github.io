@@ -45,14 +45,14 @@
 
   <div class="menubar">
   <ul class="topnav" id="myTopnav">
- <li><a class="active" href="https://souvickg.github.io/me/">Home</a></li>
+ <li><a class="active" href="https://souvickg.github.io//index.html">Home</a></li>
     <li><a href="https://souvickg.github.io/publications.html">Publications</a></li>
      <li><a href="https://souvickg.github.io/projects.html">Projects</a></li>
       <li><a href="https://souvickg.github.io/cv.html">CV</a></li>
      <!-- <li><a href="class/">Class</a></li> -->
 <!--    <li class="icon">
       <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-    </li>-->
+    </li>--->
   </ul>
   </div>
     <div class="clearfix"></div>

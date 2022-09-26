@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+<title>
+
+    Souvick Ghosh
+
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="./Souvick Ghosh_files/bootstrap.min.css" rel="stylesheet">
+
+<!-- Optional Bootstrap Theme -->
+<link href="data:text/css;charset=utf-8," data-href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+<!-- Documentation extras -->
+<link href="./Souvick Ghosh_files/docs.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]><script src="http://getbootstrap.com/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="./Souvick Ghosh_files/ie-emulation-modes-warning.js.download"></script>
+
+
+<!-- Custom styles for this template -->
+<link href="./Souvick Ghosh_files/style.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr / Respond -->
+  <script src="./Souvick Ghosh_files/modernizr-2.0.6.min.js.download"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  </head>
+  <body>
+
+<div class ="menubar">
+  <ul class="topnav" id="myTopnav">
+ <li><a href="https://souvickg.github.io//index.html">Home</a></li>
+    <li><a href="https://souvickg.github.io//publications.html">Publications</a></li>
+     <li><a href="https://souvickg.github.io//projects.html">Projects</a></li>
+      <li><a class="active" href="https://souvickg.github.io//cv.html">CV</a></li>
+     <!-- <li><a href="class/">Class</a></li> -->
+<!--    <li class="icon">
+      <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+    </li>-->
+  </ul>
+  </div>
+    <div class="clearfix"></div>
+
+  <div class="wrapper">
+  	<header>
+  		<div class="image-holder name uppercase"> <a href="index.html" style="color: #555;" > Souvick Ghosh</a></div>
+  	</header>
+
+ <section class = "container bundle">
+ 	<h3 class="uppercase subtitle"> <img src="./Souvick Ghosh_files/paper.png" class="icon">Curriculum Vitae</h3>
+
+ 	<hr>
+  <iframe src="cv_files/Ghosh_CV.pdf" width="100%" height="800px">
+
+ </section>
+
+
+
+
+
+
+  <section>
+  <hr>
+  	<footer>
+  	  <p>© 2022 Souvick Ghosh</p>
+  	</footer>
+  </section>
+  </div>
+
+    </body>
+</html>

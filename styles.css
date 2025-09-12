@@ -1,35 +1,49 @@
-/* Minimal custom CSS for polish */
-:root {
-  --vt-card: #ffffff;
-  --vt-border: #e5e7eb;
+/* Fancy neutral theme */
+:root{
+  --card-bg: rgba(255,255,255,0.7);
+  --card-border: #e5e7eb;
+  --ring: #c7d2fe; /* indigo-200 */
+  --text-muted: #6b7280; /* gray-500 */
 }
-
-.btn-pill {
-  @apply inline-flex items-center rounded-full border px-3 py-1 text-sm hover:bg-neutral-50;
-}
-
 .section { scroll-margin-top: 96px; }
-.section-title { @apply text-xl sm:text-2xl font-semibold mb-3; }
-
+.section-title { font-size: 1.375rem; font-weight: 600; margin-bottom: .75rem; }
 .card {
-  background: var(--vt-card);
-  border: 1px solid var(--vt-border);
-  border-radius: 1rem; /* 2xl-ish */
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 1rem;
   padding: 1.25rem;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+  box-shadow: 0 10px 30px rgba(0,0,0,.04), 0 2px 6px rgba(0,0,0,.04);
+  backdrop-filter: blur(6px);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,.07), 0 4px 10px rgba(0,0,0,.05);
+  border-color: var(--ring);
+}
+.badge { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: #6b7280; }
+.muted { color: var(--text-muted); }
+.btn-pill {
+  display: inline-flex; align-items:center; gap:.4rem;
+  border:1px solid var(--card-border); border-radius:999px; padding:.375rem .75rem;
+  font-size:.875rem; transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.btn-pill:hover { background:#f8fafc; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.06); }
 
-.card-top { @apply flex items-center justify-between; }
-.card-title { @apply mt-1 text-lg font-semibold; }
-.badge { @apply text-xs font-medium uppercase tracking-wide text-neutral-500; }
-.muted { @apply text-sm text-neutral-600; }
+.navlink { display:block; border-radius:.75rem; padding:.5rem .75rem; }
+.navlink:hover { background:#f8fafc; }
 
-/* Sidebar nav hover */
-.navlink { @apply block rounded-xl px-3 py-2 hover:bg-neutral-50; }
-
-/* Blinking cursor for the typing line */
-.cursor { animation: blink 1s steps(2, start) infinite; }
+.cursor { animation: blink 1s steps(2,start) infinite; }
 @keyframes blink { to { visibility: hidden; } }
 
-/* (Optional) Smooth scroll */
-html { scroll-behavior: smooth; }
+/* subtle gradient rings around the profile card */
+header.bg-white { position: relative; overflow: hidden; }
+header.bg-white::before {
+  content:""; position:absolute; inset:-1px;
+  background: radial-gradient(800px 120px at 10% -20%, rgba(99,102,241,.08), transparent 60%),
+              radial-gradient(800px 120px at 110% 120%, rgba(56,189,248,.08), transparent 60%);
+  pointer-events:none;
+}
+
+/* Link underline style */
+a.underline { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }

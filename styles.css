@@ -1,0 +1,35 @@
+/* Minimal custom CSS for polish */
+:root {
+  --vt-card: #ffffff;
+  --vt-border: #e5e7eb;
+}
+
+.btn-pill {
+  @apply inline-flex items-center rounded-full border px-3 py-1 text-sm hover:bg-neutral-50;
+}
+
+.section { scroll-margin-top: 96px; }
+.section-title { @apply text-xl sm:text-2xl font-semibold mb-3; }
+
+.card {
+  background: var(--vt-card);
+  border: 1px solid var(--vt-border);
+  border-radius: 1rem; /* 2xl-ish */
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+}
+
+.card-top { @apply flex items-center justify-between; }
+.card-title { @apply mt-1 text-lg font-semibold; }
+.badge { @apply text-xs font-medium uppercase tracking-wide text-neutral-500; }
+.muted { @apply text-sm text-neutral-600; }
+
+/* Sidebar nav hover */
+.navlink { @apply block rounded-xl px-3 py-2 hover:bg-neutral-50; }
+
+/* Blinking cursor for the typing line */
+.cursor { animation: blink 1s steps(2, start) infinite; }
+@keyframes blink { to { visibility: hidden; } }
+
+/* (Optional) Smooth scroll */
+html { scroll-behavior: smooth; }

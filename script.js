@@ -40,4 +40,4 @@ async function loop() {
     idx++;
   }
 }
-loop();
+if (el) loop();

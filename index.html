@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr. Souvick Ghosh — Academic Website</title>
+  <!-- Tailwind (CDN build for static hosting) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Dr. Souvick Ghosh — Conversational AI, Ethical AI, Applied AI." />
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <!-- Accent -->
+  <div class="h-1 w-full bg-gradient-to-r from-indigo-500 via-sky-500 to-teal-400"></div>
+
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <!-- Sidebar -->
+    <aside class="lg:col-span-1">
+      <div class="sticky top-6 space-y-6">
+        <header class="bg-white shadow-sm rounded-2xl p-6">
+          <img src="assets/headshot.jpg" alt="Dr. Souvick Ghosh"
+               class="w-28 h-28 rounded-full object-cover mx-auto mb-4" />
+          <h1 class="text-2xl font-semibold text-center">Dr. Souvick Ghosh</h1>
+
+          <!-- Dynamic interest line -->
+          <p class="text-center text-xs text-neutral-500 mt-1">
+            I am interested in <span id="interest" class="font-medium"></span><span class="cursor">▮</span>
+          </p>
+
+          <p class="text-center text-sm text-neutral-600 mt-2">
+            Assistant Professor, School of Information, San José State University
+          </p>
+          <div class="mt-4 flex flex-wrap justify-center gap-2">
+            <a href="cv/Souvick_Ghosh_CV.pdf" class="btn-pill">Download CV (PDF)</a>
+            <a href="https://scholar.google.com/citations?user=csWO-d0AAAAJ&hl=en" class="btn-pill">Google Scholar</a>
+          </div>
+        </header>
+
+        <nav class="bg-white rounded-2xl shadow-sm p-4">
+          <ul class="space-y-1 text-sm">
+            <li><a class="navlink" href="#about">About</a></li>
+            <li><a class="navlink" href="#research">Research</a></li>
+            <li><a class="navlink" href="#publications">Publications</a></li>
+            <li><a class="navlink" href="#teaching">Teaching</a></li>
+            <li><a class="navlink" href="#grants">Grants</a></li>
+            <li><a class="navlink" href="#service">Service</a></li>
+            <li><a class="navlink" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="bg-white rounded-2xl shadow-sm p-4 text-sm">
+          <p><strong>Email:</strong> <a class="underline" href="mailto:souvick.ghosh@sjsu.edu">souvick.ghosh@sjsu.edu</a></p>
+          <p><strong>Alt:</strong> <a class="underline" href="mailto:souvick.gh@gmail.com">souvick.gh@gmail.com</a></p>
+          <p><strong>Phone:</strong> +1-848-237-9980</p>
+          <p><strong>Web:</strong> <a class="underline" href="https://souvickg.github.io/">souvickg.github.io</a></p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="lg:col-span-3 space-y-10">
+      <section id="about" class="section">
+        <h2 class="section-title">About</h2>
+        <p>
+          I am an applied and ethical AI researcher focusing on conversational systems,
+          human–computer interaction, and machine learning. My work investigates trustworthy AI
+          and ethical conversational systems for decision-making across information-intensive domains.
+        </p>
+      </section>
+
+      <section id="research" class="section">
+        <h2 class="section-title">Research Interests</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Conversational AI & Information Retrieval</li>
+          <li>Ethical AI, Trust, and Governance</li>
+          <li>Applied AI & Human–AI Interaction</li>
+          <li>NLP for socio-technical problems</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="section">
+        <h2 class="section-title">Selected Publications</h2>
+
+        <!-- Example cards; add more as needed -->
+        <article class="card">
+          <div class="card-top">
+            <span class="badge">Journal</span>
+            <span class="muted">2025</span>
+          </div>
+          <h3 class="card-title">Spoken Conversational Search: Evaluating the Effect of System Clarifications…</h3>
+          <p class="muted">Ghosh, S. & Shah, C. · Journal of the Association for Information Science and Technology</p>
+          <p class="text-sm mt-1"><a class="underline" href="https://doi.org/10.1002/asi.24974">DOI</a></p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="badge">Journal</span>
+            <span class="muted">2024</span>
+          </div>
+          <h3 class="card-title">Exploring the economics of conversational search sessions</h3>
+          <p class="muted">Ghosh, S., Gogoi, J., & Chua, K. · Aslib Journal of Information Management, 76(4)</p>
+        </article>
+
+        <p class="muted mt-2">See complete list in the CV.</p>
+      </section>
+
+      <section id="teaching" class="section">
+        <h2 class="section-title">Teaching</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="card"><h4 class="font-medium">Information Retrieval System Design (INFO 202)</h4><p class="muted mt-1">Multiple offerings, 2021–2025</p></div>
+          <div class="card"><h4 class="font-medium">Problem Solving with Data I & II (INFO 287)</h4><p class="muted mt-1">2017–2025</p></div>
+        </div>
+      </section>
+
+      <section id="grants" class="section">
+        <h2 class="section-title">Selected Grants & Funding</h2>
+        <ul class="space-y-4">
+          <li class="card">
+            <p class="font-medium">CIRCLE: Cross-Campus Interdisciplinary Responsible Computing Learning Experiences</p>
+            <p class="muted">Co-PI — Mozilla Foundation · $149,890 (Funded, 2023–2024)</p>
+          </li>
+          <li class="card">
+            <p class="font-medium">What Do You Grab in a Fire?: AI-Assisted Automated Cataloging for Crises</p>
+            <p class="muted">PI — IMLS (Full proposal submitted, 2024)</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="service" class="section">
+        <h2 class="section-title">Service (selected)</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="card"><p class="font-medium">SIG Cabinet Director</p><p class="muted">ASIS&T · 2024–2025</p></div>
+          <div class="card"><p class="font-medium">Program Committees</p><p class="muted">SIGIR 2024–2025; CHIIR 2020–2025; WebSci 2025</p></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <div class="card">
+          <dl class="grid sm:grid-cols-2 gap-4 text-sm">
+            <div>
+              <dt class="font-medium">Email</dt>
+              <dd>
+                <a class="underline" href="mailto:souvick.ghosh@sjsu.edu">souvick.ghosh@sjsu.edu</a>
+                <span class="text-neutral-500"> · </span>
+                <a class="underline" href="mailto:souvick.gh@gmail.com">souvick.gh@gmail.com</a>
+              </dd>
+            </div>
+            <div>
+              <dt class="font-medium">Phone</dt>
+              <dd>+1-848-237-9980</dd>
+            </div>
+            <div>
+              <dt class="font-medium">Google Scholar</dt>
+              <dd><a class="underline" href="https://scholar.google.com/citations?user=csWO-d0AAAAJ&hl=en">scholar profile</a></dd>
+            </div>
+            <div>
+              <dt class="font-medium">Website</dt>
+              <dd><a class="underline" href="https://souvickg.github.io/">souvickg.github.io</a></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <footer class="text-xs text-neutral-500 pb-10">
+        <p>© <span id="year"></span> Souvick Ghosh • Built with Tailwind.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>

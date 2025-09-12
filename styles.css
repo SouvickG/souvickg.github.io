@@ -1,4 +1,158 @@
-/* ===== Site-wide neutral + fancy theme (Tailwind-friendly) ===== */
+/* ===== Rich Neutral Theme v3 — More Blue Accents (Tailwind-friendly) ===== */
+:root{
+  --bg: #f5f7fa;
+  --bg-grad-top: #f8fbff;      /* cooler neutral-50 leaning blue */
+  --bg-grad-bottom: #eaf2ff;   /* blue-tinted neutral */
+  --fg: #0b0f13;
+  --muted:#5b6472;
+  --card:#ffffffee;
+  --card-border:#e3e8ef;
+  /* Blue-forward rings/accents */
+  --ring1:#bfdbfe;  /* blue-200 */
+  --ring2:#93c5fd;  /* blue-300 */
+  --ring3:#60a5fa;  /* blue-400 */
+  --pill:#f0f6ff;   /* very light blue */
+  --nav:#0f172a;
+  --nav-hover:#1e3a8a;
+  --link:#1e40af;       /* blue-800 */
+  --link-hover:#1d4ed8; /* blue-700 */
+  --badge-bg:#e0f2fe;   /* sky-100 */
+  --badge-fg:#075985;   /* sky-900 */
+  --bar1:#4f46e5;       /* indigo-600 */
+  --bar2:#0ea5e9;       /* sky-500 */
+  --bar3:#14b8a6;       /* teal-500 */
+  --cursor:#2563eb;     /* blue-600 */
+}
+
+/* Background gradient */
+html,body{
+  background: linear-gradient(180deg, var(--bg-grad-top), var(--bg-grad-bottom));
+  color: var(--fg);
+}
+
+/* Accent top bar — stronger blue */
+body > .h-1{
+  height: 6px !important;
+  background: linear-gradient(90deg, var(--bar1), var(--bar2), var(--bar3));
+  box-shadow: 0 2px 8px rgba(0,0,0,.09) inset;
+}
+
+/* Section titles — blue gradient chip */
+.section-title{
+  font-size:1.5rem; font-weight:700; margin-bottom:.85rem;
+  color:#0f172a;
+  display:inline-flex; align-items:center; gap:.6rem;
+}
+.section-title::before{
+  content:"";
+  width:12px; height:28px; border-radius:999px;
+  background: linear-gradient(180deg, var(--ring2), var(--ring3));
+  box-shadow: 0 6px 14px rgba(37, 99, 235, .20);
+}
+
+/* Cards with blue wash */
+.card{
+  background: linear-gradient(180deg, #ffffff, #f7fbff);
+  border:1px solid var(--card-border);
+  border-radius:1.1rem;
+  padding:1.25rem 1.5rem;
+  box-shadow:
+    0 18px 30px rgba(2, 6, 23, .06),
+    0 2px 6px rgba(2, 6, 23, .04);
+  position:relative;
+  overflow:hidden;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card::after{
+  content:"";
+  position:absolute; inset:0; pointer-events:none;
+  background:
+    radial-gradient(600px 120px at 110% -10%, rgba(191,219,254,.3), transparent 60%),
+    radial-gradient(400px 100px at -10% 110%, rgba(125,211,252,.22), transparent 60%);
+  opacity:.7;
+}
+.card:hover{
+  transform: translateY(-2px);
+  border-color: #bfd3ff;
+  box-shadow:
+    0 22px 38px rgba(2, 6, 23, .10),
+    0 6px 12px rgba(2, 6, 23, .06);
+}
+
+/* Header (profile) blue-tinted washes */
+header.bg-white{
+  position:relative; overflow:hidden;
+  background: linear-gradient(180deg, #ffffff, #f6f9ff);
+}
+header.bg-white::before{
+  content:""; position:absolute; inset:-2px;
+  background:
+    radial-gradient(700px 120px at 10% -10%, rgba(59,130,246,.10), transparent 60%),
+    radial-gradient(600px 160px at 120% 120%, rgba(14,165,233,.12), transparent 60%);
+  pointer-events:none;
+}
+
+/* Navigation */
+.navlink{
+  display:block; border-radius:.75rem; padding:.55rem .8rem;
+  color: var(--nav);
+  transition: background .15s ease, color .15s ease, transform .15s ease;
+}
+.navlink:hover{
+  background: linear-gradient(90deg, #eff6ff, #e0e7ff);
+  color: var(--nav-hover);
+  transform: translateX(2px);
+}
+
+/* Buttons / pills */
+.btn-pill{
+  display:inline-flex; align-items:center; gap:.4rem;
+  background: var(--pill);
+  border:1px solid var(--card-border);
+  border-radius:999px; padding:.45rem .9rem; font-size:.9rem;
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.btn-pill:hover{
+  background: linear-gradient(90deg, #fafcff, #e6f0ff);
+  border-color:#c7d2fe;
+  box-shadow:0 10px 18px rgba(2,6,23,.08);
+  transform: translateY(-1px);
+}
+
+/* Badges */
+.badge{
+  display:inline-block; padding:.15rem .5rem; border-radius:.5rem;
+  background: var(--badge-bg); color: var(--badge-fg);
+  font-weight:600; font-size:.75rem; letter-spacing:.04em;
+}
+
+/* Muted text + links */
+.muted{ color: var(--muted); }
+a.underline{ text-decoration-thickness:1.5px; text-underline-offset:3px; color:var(--link); }
+a.underline:hover{ color:var(--link-hover); }
+
+/* Colored blinking cursor for areas of interest */
+.cursor{
+  color: var(--cursor);
+  animation:blink 1s steps(2,start) infinite;
+  text-shadow: 0 0 2px rgba(37, 99, 235, .5);
+}
+@keyframes blink{ to{ visibility:hidden; } }
+
+/* Publication list spacing */
+ul { list-style: disc; }
+ul.space-y-2 > li { margin: .3rem 0; }
+em { font-style: italic; }
+
+/* Footer subtle top border */
+footer{ border-top: 1px solid #e2e8f0; margin-top: .5rem; padding-top:.75rem; color:#64748b; }
+
+/* Print */
+@media print{
+  .btn-pill, .navlink { display:none !important; }
+  a.underline{ color:#000 !important; text-decoration:underline; }
+  header.bg-white::before, .card::after{ display:none; }
+}
 :root{
   --bg: #f9fafb;          /* neutral-50 */
   --fg: #0b0f13;          /* near neutral-900 */

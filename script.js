@@ -4,7 +4,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // Rotating interests — typing + erasing
 const interests = [
   { text: "conversational AI and information retrieval", color: "#2563eb" }, // blue-600
-  { text: "ethical AI, trust, and governance", color: "#1d4ed8" }, // blue-700
+  { text: "human-centered AI, trust, and governance", color: "#1d4ed8" }, // blue-700
   { text: "human–AI interaction and evaluation", color: "#0ea5e9" }, // sky-500
   { text: "data mining with language models", color: "#0891b2" }, // teal-600
   { text: "applied AI for community well-being", color: "#3730a3" } // indigo-800

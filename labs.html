@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Research Labs — Dr. Souvick Ghosh</title>
+<meta name="description" content="ICANN Lab and PAVE Lab, directed by Dr. Souvick Ghosh at the School of Information Science, University of South Carolina." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="stylesheet" href="assets/labs.css" />
+<meta property="og:title" content="Research Labs — Dr. Souvick Ghosh" />
+<meta property="og:description" content="ICANN builds and evaluates conversational AI systems. PAVE studies the people who use them and the values that shape them." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://souvickg.github.io/labs.html" />
+<meta property="og:image" content="https://souvickg.github.io/assets/og-labs.png" />
+<meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+<a class="skip" href="#labs">Skip to the labs</a>
+<div class="topbar" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <nav class="sitenav" aria-label="Breadcrumb">
+    <a class="u" href="index.html">Dr. Souvick “Vic” Ghosh</a>
+    <span class="sep" aria-hidden="true">/</span>
+    <span>Research Labs</span>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <p class="kicker">School of Information Science · University of South Carolina</p>
+    <h1>Two labs, one research program</h1>
+    <p class="lede">
+      I direct two labs that approach the same problem from opposite ends. ICANN builds and probes the systems
+      themselves: dialogue models, retrieval, and the neural methods underneath them. PAVE studies the people
+      who use those systems and the values that shape them, and develops ways to evaluate both. Students often
+      work across the two, and most of our strongest projects begin where they overlap.
+    </p>
+    <div class="actions">
+      <a class="btn-pill" href="icann.html">ICANN Lab &rarr;</a>
+      <a class="btn-pill" href="pave.html">PAVE Lab &rarr;</a>
+      <a class="btn-pill" href="#join">Join a lab</a>
+      <a class="btn-pill" href="mailto:souvick.ghosh@sc.edu">Email</a>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE LAB SWITCHER (revealed by JS) ============ -->
+  <div class="tabbar" id="tabbar" hidden>
+    <div class="tablist" role="tablist" aria-label="Choose a lab">
+      <button type="button" class="tabbtn" role="tab" data-lab="icann"
+              id="tab-icann" aria-controls="icann" aria-selected="true">
+        ICANN <small>Systems &amp; methods</small>
+      </button>
+      <button type="button" class="tabbtn" role="tab" data-lab="pave"
+              id="tab-pave" aria-controls="pave" aria-selected="false" tabindex="-1">
+        PAVE <small>People &amp; evaluation</small>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================== SPLIT VIEW ===================== -->
+  <div class="split" id="labs">
+
+    <!-- ------------------- ICANN ------------------- -->
+    <section class="panel lab-icann" id="icann" aria-labelledby="icann-h">
+
+      <div class="labhead">
+        <div class="labtop">
+          <span class="labmark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M15 21.5a5.5 5.5 0 0 1 5.5-5.5h23a5.5 5.5 0 0 1 5.5 5.5v14a5.5 5.5 0 0 1-5.5 5.5H30l-8.5 7.2a1 1 0 0 1-1.65-.77V41h.65A5.5 5.5 0 0 1 15 35.5z" stroke="#fff" stroke-width="2.8" stroke-linejoin="round"/>
+              <path d="M23.5 28.5 32 23.5 40.5 28.5 32 33.5Z" stroke="#fff" stroke-width="2" opacity=".7"/>
+              <circle cx="23.5" cy="28.5" r="3.1" fill="#fff"/><circle cx="40.5" cy="28.5" r="3.1" fill="#fff"/>
+              <circle cx="32" cy="23.5" r="3.1" fill="#fff"/><circle cx="32" cy="33.5" r="3.1" fill="#fff"/>
+            </svg>
+          </span>
+          <div>
+            <span class="badge">Technical lab · since 2020</span>
+            <h2 class="labname" id="icann-h">ICANN Lab</h2>
+            <p class="labexpand">Intelligent Conversational Agents and Neural Networks</p>
+          </div>
+        </div>
+        <p class="labblurb">
+          ICANN builds and stress-tests the machinery of conversational information access. We model how people
+          talk to search systems, train and probe neural architectures for dialogue and retrieval, and construct
+          the benchmarks that make claims about these systems checkable. The lab has run since 2020 and has
+          mentored more than thirty students at the graduate, undergraduate, and high school levels.
+        </p>
+        <div class="labmeta">
+          <span class="chip">Conversational search</span>
+          <span class="chip">NLP</span>
+          <span class="chip">Information retrieval</span>
+          <span class="chip">Evaluation</span>
+        </div>
+      </div>
+
+      <h3 class="section-title">Focus areas</h3>
+      <ol class="stack">
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">1</span>
+          <div>
+            <h4>Conversational search and spoken dialogue</h4>
+            <p>Clarification behavior, mixed-initiative dialogue, result presentation in voice-only settings,
+              and the cost structure of a conversational session.</p>
+          </div>
+        </li>
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">2</span>
+          <div>
+            <h4>Neural models for language, speech, and intent</h4>
+            <p>Speech act classification, spoken intent recognition, attention architectures, and NLP for
+              code-mixed and low-resource text.</p>
+          </div>
+        </li>
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">3</span>
+          <div>
+            <h4>Retrieval and search behavior modeling</h4>
+            <p>Session-based behavior, searching as learning, task complexity, and question quality in
+              community platforms.</p>
+          </div>
+        </li>
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">4</span>
+          <div>
+            <h4>Evaluation infrastructure for AI systems</h4>
+            <p>Benchmarks, reusable harnesses, and methods for checking whether an automated evaluation
+              actually measures what it claims to.</p>
+          </div>
+        </li>
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">5</span>
+          <div>
+            <h4>Computational social science at scale</h4>
+            <p>Sentiment and stance analysis, misinformation detection, and sample-efficient methods for
+              reading public opinion from social platforms.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="section-title">Ongoing projects</h3>
+      <ul class="stack">
+        <li class="card proj">
+          <h4>Simulated users in system evaluation</h4>
+          <p>Whether language models can stand in for human participants in user studies, and where that
+            substitution breaks down.</p>
+          <span class="tag">In progress</span>
+        </li>
+        <li class="card proj">
+          <h4>Linking speech to retrieval</h4>
+          <p>Connecting what a person says in a spoken request to what a system should go and find.</p>
+          <span class="tag">Under review</span>
+        </li>
+        <li class="card proj">
+          <h4>Affect-aware conversational agents</h4>
+          <p>Agents that register the emotional register of a turn and can explain how that reading shaped
+            their response.</p>
+          <span class="tag">Funded</span>
+        </li>
+        <li class="card proj">
+          <h4>Bias mitigation in generated dialogue</h4>
+          <p>Detecting and reducing bias in the language conversational systems produce.</p>
+          <span class="tag">In development</span>
+        </li>
+      </ul>
+
+      <h3 class="section-title">People</h3>
+      <div class="stack">
+        <div class="card flat person">
+          <span class="avatar" aria-hidden="true">SG</span>
+          <div><h4>Dr. Souvick “Vic” Ghosh</h4><p>Director and Principal Investigator</p></div>
+        </div>
+        <!-- TODO: replace the open slots below with real members; duplicate a block to add more -->
+        <div class="card open person">
+          <span class="avatar ghost" aria-hidden="true">+</span>
+          <div><h4 class="muted">Graduate Research Assistant</h4><p>Open, Fall 2026</p></div>
+        </div>
+        <div class="card open person">
+          <span class="avatar ghost" aria-hidden="true">+</span>
+          <div><h4 class="muted">Doctoral Researcher</h4><p>Open</p></div>
+        </div>
+      </div>
+
+      <h3 class="section-title">Selected publications</h3>
+      <ul class="stack-lg">
+        <li class="pub">
+          <h4>Spoken conversational search: evaluating the effect of system clarifications on user experience through a Wizard-of-Oz study</h4>
+          <p class="cite">Ghosh, S., &amp; Shah, C. (2025). <span class="venue">JASIST</span>, 76(5), 819–839.
+            <a class="u" href="https://doi.org/10.1002/asi.24974">DOI</a></p>
+        </li>
+        <li class="pub">
+          <h4>Exploring the economics of conversational search sessions</h4>
+          <p class="cite">Ghosh, S., Gogoi, J., &amp; Chua, K. (2024). <span class="venue">Aslib Journal of Information Management</span>, 76(4), 613–628.</p>
+        </li>
+        <li class="pub">
+          <h4>Toward connecting speech acts and search actions in conversational search tasks</h4>
+          <p class="cite">Ghosh, S., Ghosh, S., &amp; Shah, C. (2023). <span class="venue">ACM/IEEE JCDL</span>, 119–131. Vannevar Bush Best Paper nomination.</p>
+        </li>
+        <li class="pub">
+          <h4>Classifying speech acts using a multi-channel deep attention network for task-oriented conversational search agents</h4>
+          <p class="cite">Ghosh, S., &amp; Ghosh, S. (2021). <span class="venue">ACM CHIIR</span>.</p>
+        </li>
+        <li class="pub">
+          <h4>Predicting question deletion and assessing question quality in social Q&amp;A sites using weakly supervised deep neural networks</h4>
+          <p class="cite">Ghosh, S. (2021). <span class="venue">HICSS 54</span>.</p>
+        </li>
+        <li class="pub">
+          <h4>Searching as learning: exploring search behavior and learning outcomes in learning-related tasks</h4>
+          <p class="cite">Ghosh, S., Rath, M., &amp; Shah, C. (2018). <span class="venue">ACM CHIIR</span>, 22–31.</p>
+        </li>
+      </ul>
+      <p class="morelink"><a class="u" href="icann.html#publications">All ICANN publications &rarr;</a></p>
+
+      <h3 class="section-title">Join ICANN</h3>
+      <div class="card join">
+        <p class="small">I am recruiting students who want to build things and then find out whether they work.
+          Prior publication is not expected.</p>
+        <ul class="checklist">
+          <li>Some Python, and comfort with PyTorch or an equivalent framework</li>
+          <li>Patience to run an experiment three times before believing it</li>
+          <li>Interest in dialogue modeling, evaluation tooling, or large-scale text analysis</li>
+        </ul>
+        <p class="small" style="margin-top:.9rem">
+          <a class="btn-solid" href="mailto:souvick.ghosh@sc.edu?subject=ICANN%20Lab%20inquiry">Write to me</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ------------------- PAVE ------------------- -->
+    <section class="panel lab-pave" id="pave" aria-labelledby="pave-h">
+
+      <div class="labhead">
+        <div class="labtop">
+          <span class="labmark" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <rect x="17" y="43" width="30" height="6" rx="3" fill="#fff" opacity=".95"/>
+              <rect x="20.5" y="34" width="23" height="6" rx="3" fill="#fff" opacity=".78"/>
+              <rect x="24" y="25" width="16" height="6" rx="3" fill="#fff" opacity=".58"/>
+              <circle cx="32" cy="16.5" r="5.2" fill="#fff"/>
+            </svg>
+          </span>
+          <div>
+            <span class="badge">Human-centered lab · launching 2026</span>
+            <h2 class="labname" id="pave-h">PAVE Lab</h2>
+            <p class="labexpand">People, AI, Values &amp; Evaluation</p>
+          </div>
+        </div>
+        <p class="labblurb">
+          The PAVE Lab studies, designs, and evaluates artificial intelligence systems with a focus on the
+          people who interact with them and the values that shape their design and use. We combine
+          computational, experimental, and human-centered methods to understand how people communicate, seek
+          information, collaborate, and make decisions with AI, while developing methods to evaluate these
+          systems for effectiveness, reliability, bias, trust, and accountability.
+        </p>
+        <div class="labmeta">
+          <span class="chip">Human-AI interaction</span>
+          <span class="chip">Responsible AI</span>
+          <span class="chip">AI evaluation</span>
+          <span class="chip">Applied AI</span>
+        </div>
+      </div>
+
+      <h3 class="section-title">Focus areas</h3>
+      <ol class="stack">
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">1</span>
+          <div>
+            <h4>Human-AI interaction and information seeking</h4>
+            <p>How people ask, follow up, and decide when the system talks back, including the shift from
+              queries to conversations.</p>
+          </div>
+        </li>
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">2</span>
+          <div>
+            <h4>Responsible and ethical AI</h4>
+            <p>Audits of demographic and stereotype bias in model behavior, with attention to consequential
+              settings such as law enforcement and healthcare.</p>
+          </div>
+        </li>
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">3</span>
+          <div>
+            <h4>Evaluation, trust, and accountability</h4>
+            <p>Methods for judging whether a system is reliable, whether a user's trust in it is calibrated,
+              and who answers for it when it is wrong.</p>
+          </div>
+        </li>
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">4</span>
+          <div>
+            <h4>Applied AI in public-interest settings</h4>
+            <p>Libraries, archives and recordkeeping, health information, reference services, and
+              customer-facing work. Sectors where AI arrives with little support and high stakes.</p>
+          </div>
+        </li>
+        <li class="card focus">
+          <span class="focus-num" aria-hidden="true">5</span>
+          <div>
+            <h4>AI literacy, governance, and the workforce</h4>
+            <p>Responsible computing education, professional competencies, and governance frameworks for
+              institutions adopting AI-mediated services.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="section-title">Ongoing projects</h3>
+      <ul class="stack">
+        <li class="card proj">
+          <h4>Auditing bias in model judgments</h4>
+          <p>Scenario-based testing of how demographic details change the decisions large language models
+            recommend in high-stakes domains.</p>
+          <span class="tag">Accepted, ASIS&amp;T 2026</span>
+        </li>
+        <li class="card proj">
+          <h4>Human-AI collaboration in qualitative analysis</h4>
+          <p>Where model-assisted coding of health-related video content matches trained human analysts, and
+            where it fails in ways that matter.</p>
+          <span class="tag">Funded</span>
+        </li>
+        <li class="card proj">
+          <h4>InterPARES Trust AI</h4>
+          <p>AI for retention and disposition in trusted digital recordkeeping, and assessment of personal
+            information in records. AI consultant and co-applicant.</p>
+          <span class="tag">SSHRC · through 2026</span>
+        </li>
+        <li class="card proj">
+          <h4>CIRCLE</h4>
+          <p>Cross-Campus Interdisciplinary Responsible Computing Learning Experiences: embedding ethics into
+            computing coursework across institutions.</p>
+          <span class="tag">Mozilla · co-PI</span>
+        </li>
+        <li class="card proj">
+          <h4>Technology, governance, and hope</h4>
+          <p>An international program on how societies steer the technologies they adopt.</p>
+          <span class="tag">Gilman Program · co-PI</span>
+        </li>
+        <li class="card proj">
+          <h4>AI and social justice</h4>
+          <p>A book on challenges and opportunities where AI meets questions of justice and access, under
+            contract with Emerald.</p>
+          <span class="tag">In progress</span>
+        </li>
+      </ul>
+
+      <h3 class="section-title">People</h3>
+      <div class="stack">
+        <div class="card flat person">
+          <span class="avatar" aria-hidden="true">SG</span>
+          <div><h4>Dr. Souvick “Vic” Ghosh</h4><p>Director and Principal Investigator</p></div>
+        </div>
+        <!-- TODO: replace the open slots below with real members; duplicate a block to add more -->
+        <div class="card open person">
+          <span class="avatar ghost" aria-hidden="true">+</span>
+          <div><h4 class="muted">Doctoral Researcher</h4><p>Open, Fall 2026</p></div>
+        </div>
+        <div class="card open person">
+          <span class="avatar ghost" aria-hidden="true">+</span>
+          <div><h4 class="muted">Graduate Research Assistant</h4><p>Open, Fall 2026</p></div>
+        </div>
+      </div>
+
+      <h3 class="section-title">Selected publications</h3>
+      <ul class="stack-lg">
+        <li class="pub">
+          <h4>Probability and prejudice: a scenario-based audit of demographic bias in LLM judgments across law enforcement and healthcare</h4>
+          <p class="cite">Ghosh, S., Mehra, B., &amp; Lu, K. (2026). <span class="venue">Proceedings of ASIS&amp;T</span>, 63. Accepted.</p>
+        </li>
+        <li class="pub">
+          <h4>From queries to conversations: examining human–GenAI information-seeking through Belkin's cognitive communication model</h4>
+          <p class="cite">Charette, C., &amp; Ghosh, S. (2025). <span class="venue">Proceedings of ASIS&amp;T</span>, 62(1), 105–116.</p>
+        </li>
+        <li class="pub">
+          <h4>Human-AI collaborative content analysis: the efficacy and challenges of LLM-assisted content analysis for TikTok videos on palliative care</h4>
+          <p class="cite">Ghosh, S., Malempati, K., &amp; Charette, C. (2025). <span class="venue">Proceedings of ASIS&amp;T</span>, 62(1), 229–240.</p>
+        </li>
+        <li class="pub">
+          <h4>Evolution of reference services in the era of generative artificial intelligence</h4>
+          <p class="cite">Aguiñaga, J., Mooradian, N., Ghosh, S., &amp; Hofman, D. (2025). <span class="venue">Proceedings of ASIS&amp;T</span>, 62(1), 13–25.</p>
+        </li>
+        <li class="pub">
+          <h4>Exploring dehumanization and infrahumanization as underlying factors in misinformation belief and spread</h4>
+          <p class="cite">Weiss, A., Ghosh, S., &amp; Johnson, F. (2025). <span class="venue">CAIS</span>. Best Paper by a Practitioner.</p>
+        </li>
+        <li class="pub">
+          <h4>Tracing the past, predicting the future: a systematic review of AI in archival science</h4>
+          <p class="cite">Shinde, G., Kirstein, T., Ghosh, S., &amp; Franks, P. (2025). <span class="venue">Proceedings of ASIS&amp;T</span>, 62(1), 659–671.</p>
+        </li>
+      </ul>
+      <p class="morelink"><a class="u" href="pave.html#publications">All PAVE publications &rarr;</a></p>
+
+      <h3 class="section-title">Join PAVE</h3>
+      <div class="card join">
+        <p class="small">PAVE is recruiting its first cohort for Fall 2026. I am looking for students curious
+          about what AI does to people and institutions.</p>
+        <ul class="checklist">
+          <li>Information science, HCI, communication, public health, education, law, or computing</li>
+          <li>Interview and survey design, qualitative coding, or statistics, or the willingness to learn one</li>
+          <li>Ability to write clearly about a messy problem</li>
+        </ul>
+        <p class="small" style="margin-top:.9rem">
+          <a class="btn-solid" href="mailto:souvick.ghosh@sc.edu?subject=PAVE%20Lab%20inquiry">Write to me</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== CROSS-LAB BAND ===================== -->
+  <section class="band" id="join" aria-labelledby="join-h">
+    <h2 id="join-h">Working across both labs</h2>
+    <div class="cols">
+      <p>
+        Students are welcome in both labs, and several projects need both sides. Building a bias audit takes
+        engineering; interpreting what the audit found takes people who study people. If you are unsure which
+        lab fits, write to me and describe the problem rather than the method. We will find the right side of
+        the house.
+      </p>
+      <p>
+        Prospective doctoral applicants: contact me before the application deadline so we can discuss fit.
+        Undergraduate and master's students at UofSC can ask about independent study and research
+        assistantships at any point in the semester.
+      </p>
+    </div>
+    <p class="small" style="margin-top:1.1rem">
+      <a class="u" href="mailto:souvick.ghosh@sc.edu">souvick.ghosh@sc.edu</a>
+      <span class="muted" aria-hidden="true"> · </span>
+      <a class="u" href="https://scholar.google.com/citations?user=csWO-d0AAAAJ&amp;hl=en">Google Scholar</a>
+      <span class="muted" aria-hidden="true"> · </span>
+      <a class="u" href="index.html">Personal site</a>
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Souvick Ghosh</p>
+    <p>School of Information Science, University of South Carolina</p>
+  </footer>
+</div>
+
+<script src="assets/labs.js" defer></script>
+</body>
+</html>

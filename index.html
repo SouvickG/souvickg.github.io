@@ -7,7 +7,8 @@
   <!-- Tailwind (CDN build for static hosting) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Dr. Souvick Ghosh — Conversational AI, Human-centered AI, Applied AI." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Dr. Souvick Ghosh — Conversational AI, Ethical AI, Applied AI." />
 </head>
 <body class="bg-neutral-50 text-neutral-900">
   <!-- Accent -->
@@ -31,6 +32,7 @@
             Associate Professor, School of Information Science, University of South Carolina
           </p>
           <div class="mt-4 flex flex-wrap justify-center gap-2">
+            <a href="labs.html" class="btn-pill">Research Labs</a>
             <a href="cv/Souvick_Ghosh_CV.pdf" class="btn-pill">Download CV (PDF)</a>
             <a href="https://scholar.google.com/citations?user=csWO-d0AAAAJ&hl=en" class="btn-pill">Google Scholar</a>
           </div>
@@ -40,6 +42,7 @@
           <ul class="space-y-1 text-sm">
             <li><a class="navlink" href="#about">About</a></li>
             <li><a class="navlink" href="#research">Research</a></li>
+            <li><a class="navlink" href="#labs">Labs</a></li>
             <li><a class="navlink" href="#publications">Publications</a></li>
             <li><a class="navlink" href="#teaching">Teaching</a></li>
             <li><a class="navlink" href="#grants">Grants</a></li>
@@ -49,7 +52,7 @@
         </nav>
 
         <div class="bg-white rounded-2xl shadow-sm p-4 text-sm">
-          <p><strong>Email:</strong> <a class="underline" href="mailto:souvick.ghosh@sjsu.edu">souvick.ghosh@sc.edu</a></p>
+          <p><strong>Email:</strong> <a class="underline" href="mailto:souvick.ghosh@sc.edu">souvick.ghosh@sc.edu</a></p>
           <p><strong>Alt:</strong> <a class="underline" href="mailto:souvick.gh@gmail.com">souvick.gh@gmail.com</a></p>
           <p><strong>Phone:</strong> +1-(eight-four-eight)-(two-three-seven)-(nine-nine-eight-zero)</p>
           <p><strong>Web:</strong> <a class="underline" href="https://souvickg.github.io/">souvickg.github.io</a></p>
@@ -62,7 +65,7 @@
       <section id="about" class="section">
         <h2 class="section-title">About</h2>
         <p>
-          I am an applied and human-centered AI researcher focusing on conversational systems,
+          I am an applied and ethical AI researcher focusing on conversational systems,
           human–computer interaction, and machine learning. My work investigates trustworthy AI
           and ethical conversational systems for decision-making across information-intensive domains.
         </p>
@@ -72,10 +75,57 @@
         <h2 class="section-title">Research Interests</h2>
         <ul class="list-disc pl-6 space-y-1">
           <li>Conversational AI & Information Retrieval</li>
-          <li>Human-centered AI, Trust, and Governance</li>
+          <li>Ethical AI, Trust, and Governance</li>
           <li>Applied AI & Human–AI Interaction</li>
           <li>NLP for socio-technical problems</li>
         </ul>
+      </section>
+
+      <!-- ============================================================
+           LABS  (new section — links to labs.html / icann.html / pave.html)
+           ============================================================ -->
+      <section id="labs" class="section">
+        <h2 class="section-title">Research Labs</h2>
+        <p class="mb-4">
+          I direct two labs that approach the same problem from opposite ends. ICANN builds and probes
+          conversational systems themselves; PAVE studies the people who use them and the values that shape
+          them. <a class="underline" href="labs.html">See both labs side by side →</a>
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <a href="icann.html" class="card block no-underline">
+            <div class="flex items-start gap-3">
+              <img src="assets/mark-icann.svg" alt="" width="44" height="44" class="rounded-xl flex-none" />
+              <div>
+                <h3 class="font-semibold text-lg">ICANN Lab</h3>
+                <p class="muted text-sm mt-0.5">Intelligent Conversational Agents and Neural Networks</p>
+              </div>
+            </div>
+            <p class="text-sm mt-3">
+              Dialogue models, retrieval, evaluation infrastructure, and computational social science at scale.
+            </p>
+            <p class="text-sm mt-2 font-medium text-indigo-700">Visit the lab →</p>
+          </a>
+
+          <a href="pave.html" class="card block no-underline">
+            <div class="flex items-start gap-3">
+              <img src="assets/mark-pave.svg" alt="" width="44" height="44" class="rounded-xl flex-none" />
+              <div>
+                <h3 class="font-semibold text-lg">PAVE Lab</h3>
+                <p class="muted text-sm mt-0.5">People, AI, Values &amp; Evaluation</p>
+              </div>
+            </div>
+            <p class="text-sm mt-3">
+              Human-AI interaction, responsible AI, evaluation and trust, and applied AI in public-interest
+              settings.
+            </p>
+            <p class="text-sm mt-2 font-medium text-teal-700">Visit the lab →</p>
+          </a>
+        </div>
+
+        <p class="muted text-sm mt-3">
+          Both labs are recruiting for Fall 2026. <a class="underline" href="labs.html#join">Details on joining</a>.
+        </p>
       </section>
 
       <section id="publications" class="section">
@@ -125,10 +175,9 @@
       <section id="teaching" class="section">
         <h2 class="section-title">Teaching</h2>
         <div class="grid sm:grid-cols-2 gap-4">
-          <div class="card"><h4 class="font-medium">AI and Libraries</h4><p class="muted mt-1">Multiple offerings, 2026-Present</p></div>
-          <div class="card"><h4 class="font-medium">Information Retrieval System Design (INFO 202)</h4><p class="muted mt-1">Multiple offerings, 2021–2026</p></div>
-          <div class="card"><h4 class="font-medium">Problem Solving with Data I & II (INFO 287)</h4><p class="muted mt-1">2020–2026</p></div>
-          <div class="card"><h4 class="font-medium">Math for Machine Learning (INFO 246)</h4><p class="muted mt-1">2022–2026</p></div>
+          <div class="card"><h4 class="font-medium">Information Retrieval System Design (INFO 202)</h4><p class="muted mt-1">Multiple offerings, 2021–2025</p></div>
+          <div class="card"><h4 class="font-medium">Problem Solving with Data I & II (INFO 287)</h4><p class="muted mt-1">2020–2025</p></div>
+          <div class="card"><h4 class="font-medium">Math for Machine Learning (INFO 246)</h4><p class="muted mt-1">2022–2025</p></div>
         </div>
       </section>
 
@@ -165,7 +214,7 @@
             <div>
               <dt class="font-medium">Email</dt>
               <dd>
-                <a class="underline" href="mailto:souvick.ghosh@sjsu.edu">souvick.ghosh@sc.edu</a>
+                <a class="underline" href="mailto:souvick.ghosh@sc.edu">souvick.ghosh@sc.edu</a>
                 <span class="text-neutral-500"> · </span>
                 <a class="underline" href="mailto:souvick.gh@gmail.com">souvick.gh@gmail.com</a>
               </dd>
@@ -173,6 +222,14 @@
             <div>
               <dt class="font-medium">Phone</dt>
               <dd>+1-(eight-four-eight)-(two-three-seven)-(nine-nine-eight-zero)</dd>
+            </div>
+            <div>
+              <dt class="font-medium">Research Labs</dt>
+              <dd>
+                <a class="underline" href="icann.html">ICANN</a>
+                <span class="text-neutral-500"> · </span>
+                <a class="underline" href="pave.html">PAVE</a>
+              </dd>
             </div>
             <div>
               <dt class="font-medium">Google Scholar</dt>

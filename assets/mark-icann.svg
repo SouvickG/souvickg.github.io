@@ -1,7 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168" role="img" aria-label="ICANN Lab">
-  <rect width="168" height="168" fill="#73000a"/>
-  <rect x="20" y="80"  width="128" height="12" fill="#fff"/>
-  <rect x="20" y="104" width="79"  height="12" fill="#fff" opacity=".62"/>
-  <rect x="20" y="128" width="108" height="12" fill="#fff"/>
-  <rect x="20" y="152" width="51"  height="12" fill="#fff" opacity=".62"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="ICANN Lab">
+  <defs>
+    <linearGradient id="ig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#4338ca"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="17" fill="url(#ig)"/>
+  <!-- dialogue bubble -->
+  <path d="M15 21.5a5.5 5.5 0 0 1 5.5-5.5h23a5.5 5.5 0 0 1 5.5 5.5v14a5.5 5.5 0 0 1-5.5 5.5H30l-8.5 7.2a1 1 0 0 1-1.65-.77V41h.65A5.5 5.5 0 0 1 15 35.5z"
+        fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" opacity=".95"/>
+  <!-- network inside -->
+  <path d="M23.5 28.5 32 23.5 40.5 28.5 32 33.5Z" fill="none" stroke="#fff" stroke-width="2" opacity=".75"/>
+  <circle cx="23.5" cy="28.5" r="3.1" fill="#fff"/>
+  <circle cx="40.5" cy="28.5" r="3.1" fill="#fff"/>
+  <circle cx="32" cy="23.5" r="3.1" fill="#fff"/>
+  <circle cx="32" cy="33.5" r="3.1" fill="#fff"/>
 </svg>

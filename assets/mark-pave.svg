@@ -1,15 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PAVE Lab">
-  <defs>
-    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#14b8a6"/>
-      <stop offset="1" stop-color="#0f766e"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="17" fill="url(#pg)"/>
-  <!-- a paved path receding toward a person -->
-  <rect x="17" y="43" width="30" height="6" rx="3" fill="#fff" opacity=".95"/>
-  <rect x="20.5" y="34" width="23" height="6" rx="3" fill="#fff" opacity=".78"/>
-  <rect x="24" y="25" width="16" height="6" rx="3" fill="#fff" opacity=".58"/>
-  <!-- figure at the end of the path -->
-  <circle cx="32" cy="16.5" r="5.2" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168" role="img" aria-label="PAVE Lab">
+  <rect width="168" height="168" fill="#201e1d"/>
+  <rect x="20" y="20" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="54.5" y="20" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="89" y="20" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="123.5" y="20" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="20" y="54.5" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="54.5" y="54.5" width="24.5" height="24.5" fill="#73000a"/>
+  <rect x="89" y="54.5" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="123.5" y="54.5" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="20" y="89" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="54.5" y="89" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="89" y="89" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="123.5" y="89" width="24.5" height="24.5" fill="#fff"/>
+  <rect x="20" y="123.5" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="54.5" y="123.5" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="89" y="123.5" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
+  <rect x="123.5" y="123.5" width="24.5" height="24.5" fill="rgba(255,255,255,.5)"/>
 </svg>
